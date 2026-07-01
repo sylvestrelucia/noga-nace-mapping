@@ -1,0 +1,53 @@
+{
+  "nace_rev2": {
+    "provider": "Eurostat / Publications Office of the EU",
+    "endpoint": "https://publications.europa.eu/webapi/rdf/sparql",
+    "dataset": "http://publications.europa.eu/resource/dataset/nace2",
+    "snapshot": "data/sources/nace_r2_eurostat_sparql.json",
+    "concept_count": 996,
+    "fetched_at": "2026-07-01T11:21:40.263080+00:00",
+    "license": {
+      "name": "EU Commission reuse policy / CC BY 4.0 (editorial content)",
+      "url": "https://ec.europa.eu/eurostat/en/help/copyright-notice",
+      "attribution": "Source: Eurostat / EU Vocabularies (NACE Rev. 2)",
+      "commercial_use": "permitted with source acknowledgement; indicate modifications",
+      "modifications": "Labels and notes reformatted to JSON; NOGA catalog is a subset at levels 1–4"
+    }
+  },
+  "noga_2008": {
+    "provider": "Swiss Federal Statistical Office (BFS/OFS)",
+    "note": "NOGA 2008 levels 1–4 are identical to NACE Rev. 2; labels in this repo are sourced from Eurostat EU Vocabularies, not copied from BFS publications.",
+    "url": "https://www.bfs.admin.ch/bfs/en/home/statistics/industry-services/nomenclatures/noga.html",
+    "license": {
+      "name": "BFS reproduction terms (structural alignment); Eurostat terms (bundled labels)",
+      "url": "https://www.bfs.admin.ch/bfsstatic/dam/assets/344621/master",
+      "attribution": "Swiss Federal Statistical Office (BFS/OFS), NOGA 2008",
+      "commercial_use": "BFS publications: reproduction with source mention authorized except commercial purposes; contact BFS for commercial republication of BFS text"
+    }
+  },
+  "noga2002_noga2008_conversion_keys": {
+    "title": "Use of conversion keys for NOGA 2002–2008",
+    "author": "Jann Potterat",
+    "provider": "Swiss Federal Statistical Office (BFS/OFS)",
+    "year": 2012,
+    "fso_order_number": "338-0067-05",
+    "isbn": "978-3-303-00473-9",
+    "url": "https://www.bfs.admin.ch/bfsstatic/dam/assets/348788/master",
+    "note": "External reference only; not bundled in this repository.",
+    "license": {
+      "name": "BFS reproduction terms",
+      "url": "https://www.bfs.admin.ch/bfs/en/home/services/geostat/conditions-use.html",
+      "attribution": "Jann Potterat, Swiss Federal Statistical Office (BFS/OFS), 2012, FSO order no. 338-0067-05",
+      "commercial_use": "non-commercial reproduction with source mention generally authorized; prior written BFS permission required for commercial redistribution"
+    }
+  },
+  "repository_mapping": {
+    "provider": "noga-nace-mapping (this repository)",
+    "note": "Derived crosswalk compiled from official structural alignment; MIT license applies to software and compilation only.",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "scope": "Python code, build pipeline, and mapping compilation — does not supersede upstream data licenses"
+    }
+  }
+}

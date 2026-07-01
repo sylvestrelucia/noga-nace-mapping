@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+title: "NOGA–NACE Mapping: Swiss NOGA 2008 ↔ EU NACE Rev. 2 Industry Classification Crosswalk"
+message: "If you use this dataset or library, please cite it as follows."
+type: software
+authors:
+  - family-names: Lucia
+    given-names: Sylvestre
+repository-code: "https://github.com/sylvestrelucia/noga-nace-mapping"
+url: "https://github.com/sylvestrelucia/noga-nace-mapping"
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+abstract: >-
+  Machine-readable NOGA 2008 ↔ NACE Rev. 2 crosswalk and Python library.
+  Official NACE labels are sourced from Eurostat EU Vocabularies; structural
+  alignment follows BFS documentation. Bundled official data remains subject to
+  upstream licenses — see README.md § "Data sources & legal notice".
+keywords:
+  - NOGA
+  - NOGA 2008
+  - NACE
+  - NACE Rev. 2
+  - industry classification
+  - economic statistics
+  - Switzerland
+  - Swiss statistics
+  - BFS
+  - Eurostat
+  - crosswalk
+  - correspondence table
+  - taxonomy
+  - SKOS
+  - RDF
+  - Python
+references:
+  - type: report
+    title: "NOGA 2008 — General Classification of Economic Activities"
+    authors:
+      - name: "Swiss Federal Statistical Office (BFS/OFS)"
+    year: 2008
+    notes: "ISBN 978-3-303-00372-5"
+    url: "https://www.bfs.admin.ch/bfsstatic/dam/assets/344621/master"
+  - type: report
+    title: "NACE Rev. 2 — Statistical Classification of Economic Activities"
+    authors:
+      - name: "Eurostat"
+    year: 2008
+    notes: "ISBN 978-92-79-04741-1, publication KS-RA-07-015"
+    url: "https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-RA-07-015"
+  - type: legislation
+    title: "Regulation (EC) No 1893/2006 establishing NACE Revision 2"
+    authors:
+      - name: "European Parliament and Council of the European Union"
+    year: 2006
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32006R1893"
+  - type: dataset
+    title: "NACE Rev. 2 (EU Vocabularies)"
+    authors:
+      - name: "Eurostat / Publications Office of the European Union"
+    notes: "Multilingual labels and explanatory notes; CC BY 4.0 / EU reuse policy"
+    url: "https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nace2"
+  - type: report
+    title: "Use of conversion keys for NOGA 2002–2008"
+    authors:
+      - family-names: Potterat
+        given-names: Jann
+    year: 2012
+    notes: "Swiss Federal Statistical Office (BFS/OFS), FSO order no. 338-0067-05, ISBN 978-3-303-00473-9"
+    url: "https://www.bfs.admin.ch/bfsstatic/dam/assets/348788/master"

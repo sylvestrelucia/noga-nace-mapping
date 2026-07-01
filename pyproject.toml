@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "noga-nace-mapping"
+version = "1.0.0"
+description = "Machine-readable NOGA 2008 ↔ NACE Rev. 2 crosswalk (JSON, CSV, RDF/SKOS) and Python library — official BFS structural alignment with Eurostat labels for Swiss–EU industry classification mapping"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Sylvestre Lucia" }]
+keywords = [
+    "noga",
+    "nace",
+    "noga-2008",
+    "nace-rev2",
+    "industry-classification",
+    "economic-statistics",
+    "crosswalk",
+    "correspondence-table",
+    "taxonomy",
+    "switzerland",
+    "eurostat",
+    "bfs",
+    "swiss-statistics",
+    "skos",
+    "rdf",
+    "employment",
+    "economic-activities",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/sylvestrelucia/noga-nace-mapping"
+Repository = "https://github.com/sylvestrelucia/noga-nace-mapping"
+Issues = "https://github.com/sylvestrelucia/noga-nace-mapping/issues"
+
+[project.scripts]
+build-noga-nace-mapping = "noga_nace_mapping.cli:main"
+export-noga-nace-mapping = "noga_nace_mapping.export_cli:main"
+fetch-official-labels = "noga_nace_mapping.official_labels:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/noga_nace_mapping"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/data",
+    "/scripts",
+    "/tests",
+    "/README.md",
+    "/LICENSE",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
